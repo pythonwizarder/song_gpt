@@ -41,6 +41,7 @@ export default function App() {
     return <></>;
   }
   return (
+    <>
     <QueryClientProvider client={queryClient}>
       <NativeBaseProvider theme={theme} config={config}>
         <FirebaseContextProvider>
@@ -52,5 +53,6 @@ export default function App() {
         </FirebaseContextProvider>
       </NativeBaseProvider>
     </QueryClientProvider>
+    </>
   );
 }
